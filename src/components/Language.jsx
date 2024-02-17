@@ -1,0 +1,30 @@
+const Language = [
+  {
+    engMyDeposit: "My Deposit",
+    engDirectBusiness: "Direct Business",
+    engMyTeam: "My Team",
+    enTotalReward: "Total Reward",
+    enSponAddress: "Sponsor's Address",
+    enReferralLink: "Your Referral Link",
+    enNeedToRegister: "need to register",
+  },
+  {
+    rusMyDeposit: "Мой депозит",
+    rusUsdt: "0 долларов США",
+    rusDirectBusiness: "Прямой бизнес",
+    rusMyTeam: "Моя команда",
+    rusTotalReward: "Общая награда",
+    rusSponAddress: "Адрес спонсора",
+    rusReferralLink: "Ваша реферальная ссылка",
+    rusNeedToRegister: "Отзывать",
+  },
+  {
+    engMyDeposit: "Mi deposito",
+    engDirectBusiness: "Negocio directo",
+    engMyTeam: "Mi equipo",
+    enTotalReward: "Recompensa Total",
+    enSponAddress: "Dirección del patrocinador",
+    enReferralLink: "Tu enlace de referencia",
+    enNeedToRegister: "Retirar",
+  },
+];
