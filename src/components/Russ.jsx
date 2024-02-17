@@ -18,7 +18,7 @@ const Russ = () => {
           {show && (
             <ul className="flex bg-black border-b-[1px] border-b-[#3fd8d6] text-[#3fd8d6] p-2 rounded-xl justify-between w-full cursor-pointer">
               <Link to="/russ">
-                <li>Russian</li>
+                <li>Russin</li>
               </Link>
               <Link to="/account">
                 <li>English</li>
