@@ -5,9 +5,7 @@ import img2 from "../images/lang.png";
 import { IoReorderThreeOutline } from "react-icons/io5";
 import { FaTelegramPlane } from "react-icons/fa";
 
-import { accountContext } from "../store/AccountStore";
 import { Link } from "react-router-dom";
-import SideBar from "./SideBar";
 
 const Account = () => {
   const [show, setShow] = useState(false);
@@ -106,14 +104,14 @@ const Account = () => {
           </div>
         </div>
 
-        <div className="card w-full md:min-w-[22%] lg:min-w-[22%]  h-[25vh] mx-5 box-border text-pretty ">
+        <div className="card border border-[#eb9d37] w-full md:min-w-[22%] lg:min-w-[22%]  h-[25vh] mx-5 box-border text-pretty ">
           <div className=" border border-[#eb9d37] h-[45%] flex items-center justify-center rounded-lg ">
             <h5 className="text-[#eb9d37] text-[1.25rem] ml-4 font-medium">
               Sponsor's Address
             </h5>
           </div>
           <div
-            className="relative  border border-[#eb9d37] break-words h-[55%] flex justify-center items-center p-5 rounded-lg "
+            className="relative   break-words h-[55%] flex justify-center items-center p-5 rounded-lg "
             style={{ overflowWrap: "anywhere" }}
           >
             <h6 className=" text-[1rem] font-medium  ">

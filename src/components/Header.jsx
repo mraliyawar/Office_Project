@@ -3,7 +3,7 @@ import React from "react";
 import img1 from "../images/logo.png";
 import { Link } from "react-router-dom";
 
-const Header = ({ getweb3State }) => {
+const Header = ({ getWeb3State }) => {
   return (
     <div
       id="header"
@@ -22,7 +22,7 @@ const Header = ({ getweb3State }) => {
           <Link to="/account">
             <button
               className="connect-btn p-[2px] lg:p-1 lg:px-5 lg:py-2 lg:font-extrabold"
-              onClick={() => getweb3State()}
+              onClick={() => getWeb3State()}
             >
               Connect
             </button>
