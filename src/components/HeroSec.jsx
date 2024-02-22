@@ -1,9 +1,11 @@
 import React from "react";
 import img1 from "../images/ban1.png";
+import SideBar from "./SideBar";
 
 const HeroSec = () => {
   return (
     <div className="Hero-sec relative pt-[90px] top-0 min-lg:h-[100vh] text-white flex ">
+      <div></div>
       <div className="container bg-cover lg:w-[50%] ml-4 flex flex-col justify-center items-center ">
         <div class="section1">
           <span class="star"></span>

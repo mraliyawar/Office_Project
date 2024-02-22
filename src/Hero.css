@@ -18654,3 +18654,13 @@ canvas {
   z-index: 2;
   margin: 0px 3px;
 }
+
+.sidebox {
+  margin-top: 10px;
+  padding: 10px;
+  /* height: 2.5rem; */
+  /* margin-inline: 0.5rem; */
+  border: 1px solid #3b3b3b;
+  border-radius: 10px;
+  /* margin-bottom: 10px; */
+}
