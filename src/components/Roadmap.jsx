@@ -20,7 +20,7 @@ const Roadmap = () => {
                 Roadmapp
               </h2>
               <div
-                className="small-border bg-color-2"
+                className="small-border bg-color-2 mt-[25px]"
                 style={{ backgroundSize: "cover" }}
               />
             </div>

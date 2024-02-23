@@ -193,13 +193,12 @@ body .owl-stage .owl-item {
   animation-delay: 2.75s;
   animation-duration: 2.25s;
 }
-
---------------------------------------------------------- .sidebox {
+.sidebox {
   margin-top: 10px;
   padding: 10px;
-  /* height: 2.5rem; */
+  height: 2.5rem;
   /* margin-inline: 0.5rem; */
   border: 1px solid #3b3b3b;
   border-radius: 10px;
-  /* margin-bottom: 10px; */
+  margin-bottom: 10px;
 }

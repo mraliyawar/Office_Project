@@ -119,7 +119,7 @@ const Account = () => {
             style={{ overflowWrap: "anywhere" }}
           >
             <h6 className=" text-[1rem] font-medium  ">
-              6952653584651256456958787545455574545456
+              695265358465125645698787545455574545456
             </h6>
           </div>
         </div>

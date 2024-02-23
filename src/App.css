@@ -1083,9 +1083,9 @@ i.font60 {
 i {
   display: inline-block;
 }
-.icofont-stop:before {
+/* .icofont-stop:before {
   content: "\ecb1";
-}
+} */
 .animated {
   /* -webkit-animation-duration: 1s; */
   animation-duration: 1s;
@@ -1098,7 +1098,7 @@ i {
   background: none;
   width: auto;
   height: auto;
-  color: #fcc705d1;
+  /* color: #fcc705d1; */
   right: 0;
   top: 30%;
 }

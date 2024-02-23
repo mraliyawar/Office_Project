@@ -452,7 +452,7 @@ const Home = () => {
   function getDate(timstamp) {
     var date = new Date(timstamp);
     var year = date.getFullYear(); // 获取完整的年份(4位,1970)
-    var month = date.getMonth() + 1; // 获取月份(0-11,0代表1月,用的时候记得加上1)
+    var month = date.getMonth() + 1;
     var day = date.getDate(); // 获取日(1-31)
     var hour = date.getHours(); // 获取小时数(0-23)
     var minute = date.getMinutes(); // 获取分钟数(0-59)

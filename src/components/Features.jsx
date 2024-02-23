@@ -1,6 +1,4 @@
 import React from "react";
-import { IoDownloadOutline } from "react-icons/io5";
-import img1 from "../images/b-coin.png";
 
 const Features = () => {
   return (

@@ -53,7 +53,7 @@ const About = () => {
               If you seek a decentralized system effectively connecting the real
               and virtual realms, Alexa Global is the ideal choice. Our goal is
               to create a world that aligns with the timeless sentiment of being
-              unstoppable, unerasable, and uninterrupted.
+              unstoppable, unerasable, and uninterrupted..
             </p>
           </div>
         </div>

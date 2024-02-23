@@ -1,5 +1,6 @@
 import React from "react";
 import { FaTelegramPlane } from "react-icons/fa";
+
 import img1 from "../images/logo.png";
 
 const Footer = () => {

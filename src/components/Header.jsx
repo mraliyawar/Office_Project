@@ -1,5 +1,4 @@
 import React from "react";
-
 import img1 from "../images/logo.png";
 import { Link } from "react-router-dom";
 

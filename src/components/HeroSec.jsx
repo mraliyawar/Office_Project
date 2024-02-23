@@ -1,6 +1,5 @@
 import React from "react";
 import img1 from "../images/ban1.png";
-import SideBar from "./SideBar";
 
 const HeroSec = () => {
   return (

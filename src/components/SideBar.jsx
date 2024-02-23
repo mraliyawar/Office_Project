@@ -14,7 +14,7 @@ const SideBar = ({ open, setOpen }) => {
       </div>
 
       <div className="w-[99%]  bg-black h-[100vh] p-2 ">
-        <div className=" text-white ">
+        <div className=" text-white h-[100vh]">
           <div className="sidebox ">Dashboard</div>
           <div className="sidebox ">Deposit Details</div>
           <div className="sidebox ">Direct Details</div>

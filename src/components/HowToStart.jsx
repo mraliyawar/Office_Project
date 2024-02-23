@@ -8,7 +8,7 @@ const HowToStart = () => {
   return (
     <>
       <div className="lg:h-[90vh] bg-[#0f0f0f] text-white flex flex-col justify-center items-center">
-        <div className="mb-16">
+        <div className="mt-[40px]">
           <h1 className="text-[36px] font-bold">How to start ?</h1>
           <div
             className="small-border bg-color-2 mt-4"
