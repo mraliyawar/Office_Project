@@ -149,8 +149,8 @@ const Account = () => {
           </div>
         </div>
 
-        <div className=" flex flex-col w-full justify-center items-center bg-[#222222]">
-          <div className="w-full md:w-2/3 h-[50vh] bg-black border border-[#eb9d37] rounded-xl">
+        <div className=" px-4 flex flex-col w-full justify-center items-center bg-[#222222] lg:p-0 ">
+          <div className=" w-full md:w-2/3 h-[50vh] bg-black border border-[#eb9d37] rounded-xl ">
             <div className=" border  border-[#eb9d37] h-[30%] flex items-center justify-center rounded-xl ">
               <h5 className="text-[#eb9d37] text-[1.5rem] ml-4 font-medium ">
                 DEPOSIT
@@ -177,67 +177,67 @@ const Account = () => {
               </div>
             </div>
           </div>
+        </div>
 
-          <div className="flex w-full justify-center items-center bg-[#222222] ">
-            <div className="w-full md:w-2/3 h-[50vh] bg-black border border-[#eb9d37] rounded-xl mt-6">
-              <div className=" border  border-[#eb9d37] h-[30%] flex items-center justify-center rounded-xl ">
-                <h5 className="text-[#eb9d37] text-[1.5rem] ml-4 font-medium ">
-                  REWARD WALLET DEPOSIT
-                </h5>
-              </div>
-              <div className="flex  flex-col justify-center items-center w-full h-[70%]  ">
-                <div className="flex flex-col mt-8 p-5 w-full h-36 justify-around text-white font-medium">
-                  <p className="">Reward Wallet Balance:0</p>
-                  {/* <p className="">Matic Balance : 0 MATIC USDT Balance : 0 USDT</p> */}
-                  <div className="w-[100%] mt-4 ">
-                    <input
-                      type="text"
-                      className="w-full h-10 rounded p-2"
-                      placeholder="amount"
-                    />
-                  </div>
-                  <div className="w-full flex justify-center items-center mt-4">
-                    <button className="w-[240px] bg-[#bd771c] text-white border border-[#e79d2f] text-[1rem] p-2 font-normal rounded">
-                      Deposit
-                    </button>
-                  </div>
+        <div className="px-4 flex w-full justify-center items-center bg-[#222222] lg:p-0 ">
+          <div className="w-full md:w-2/3 h-[50vh] bg-black border border-[#eb9d37] rounded-xl mt-6">
+            <div className=" border  border-[#eb9d37] h-[30%] flex items-center justify-center rounded-xl ">
+              <h5 className="text-[#eb9d37] text-[1.5rem] ml-4 font-medium ">
+                REWARD WALLET DEPOSIT
+              </h5>
+            </div>
+            <div className="flex  flex-col justify-center items-center w-full h-[70%]  ">
+              <div className="flex flex-col mt-8 p-5 w-full h-36 justify-around text-white font-medium">
+                <p className="">Reward Wallet Balance:0</p>
+                {/* <p className="">Matic Balance : 0 MATIC USDT Balance : 0 USDT</p> */}
+                <div className="w-[100%] mt-4 ">
+                  <input
+                    type="text"
+                    className="w-full h-10 rounded p-2"
+                    placeholder="amount"
+                  />
+                </div>
+                <div className="w-full flex justify-center items-center mt-4">
+                  <button className="w-[240px] bg-[#bd771c] text-white border border-[#e79d2f] text-[1rem] p-2 font-normal rounded">
+                    Deposit
+                  </button>
                 </div>
               </div>
             </div>
           </div>
+        </div>
 
-          <div className="flex w-full justify-center items-center bg-[#222222] p-4 ">
-            <div className="w-full md:w-2/3 h-[60vh] bg-black border border-[#eb9d37] rounded-xl mt-6 ">
-              <div className=" border  border-[#eb9d37] h-[20%] flex items-center justify-center rounded-xl ">
-                <h5 className="text-[#eb9d37] text-[1.5rem] ml-4 font-medium ">
-                  REWARD WALLET TRANSFER
-                </h5>
-              </div>
-              <div className="flex flex-col justify-center items-center w-full h-[80%]  ">
-                <div className="flex flex-col mt-8 p-5 w-full h-36 justify-around text-white font-medium">
-                  <p className="">Reward Wallet Balance:0</p>
-                  {/* <p className="">Matic Balance : 0 MATIC USDT Balance : 0 USDT</p> */}
-                  <div className="w-[100%] mt-4 ">
-                    <input
-                      type="text"
-                      className="w-full h-10 rounded p-2"
-                      placeholder="amount"
-                    />
-                  </div>
-                  <p className="mt-6">Receiver address</p>
-                  {/* <p className="">Matic Balance : 0 MATIC USDT Balance : 0 USDT</p> */}
-                  <div className="w-[100%] mt-4 ">
-                    <input
-                      type="text"
-                      className="w-full h-10 rounded p-2"
-                      placeholder="amount"
-                    />
-                  </div>
-                  <div className="w-full flex justify-center items-center mt-4">
-                    <button className="w-[240px] bg-[#bd771c] text-white border border-[#e79d2f] text-[1rem] p-2 font-normal rounded">
-                      Deposit
-                    </button>
-                  </div>
+        <div className=" px-4 lg:p-0 flex w-full justify-center items-center bg-[#222222]  ">
+          <div className="w-full md:w-2/3 h-[60vh] bg-black border border-[#eb9d37] rounded-xl mt-6 ">
+            <div className=" border  border-[#eb9d37] h-[20%] flex items-center justify-center rounded-xl ">
+              <h5 className="text-[#eb9d37] text-[1.5rem] ml-4 font-medium ">
+                REWARD WALLET TRANSFER
+              </h5>
+            </div>
+            <div className="flex flex-col justify-center items-center w-full h-[80%]  ">
+              <div className="flex flex-col mt-8 p-5 w-full h-36 justify-around text-white font-medium">
+                <p className="">Reward Wallet Balance:0</p>
+                {/* <p className="">Matic Balance : 0 MATIC USDT Balance : 0 USDT</p> */}
+                <div className="w-[100%] mt-4 ">
+                  <input
+                    type="text"
+                    className="w-full h-10 rounded p-2"
+                    placeholder="amount"
+                  />
+                </div>
+                <p className="mt-6">Receiver address</p>
+                {/* <p className="">Matic Balance : 0 MATIC USDT Balance : 0 USDT</p> */}
+                <div className="w-[100%] mt-4 ">
+                  <input
+                    type="text"
+                    className="w-full h-10 rounded p-2"
+                    placeholder="amount"
+                  />
+                </div>
+                <div className="w-full flex justify-center items-center mt-4">
+                  <button className="w-[240px] bg-[#bd771c] text-white border border-[#e79d2f] text-[1rem] p-2 font-normal rounded">
+                    Deposit
+                  </button>
                 </div>
               </div>
             </div>
