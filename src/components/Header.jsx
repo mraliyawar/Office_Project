@@ -2,7 +2,7 @@ import React from "react";
 import img1 from "../images/logo.png";
 import { Link } from "react-router-dom";
 
-const Header = ({ getWeb3State }) => {
+const Header = ({ connectMetaMask }) => {
   return (
     <div
       id="header"
@@ -21,7 +21,7 @@ const Header = ({ getWeb3State }) => {
           <Link to="/account">
             <button
               className="connect-btn p-[2px] lg:p-1 lg:px-5 lg:py-2 lg:font-extrabold"
-              onClick={() => getWeb3State()}
+              onClick={() => connectMetaMask()}
             >
               Connect
             </button>

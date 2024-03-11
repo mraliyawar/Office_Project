@@ -8,7 +8,7 @@ import { FaTelegramPlane } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import SideBar from "./SideBar";
 
-const Account = () => {
+const Account = ({ account, maticBalance }) => {
   const [show, setShow] = useState(false);
   const [open, setOpen] = useState(false);
 
@@ -72,7 +72,9 @@ const Account = () => {
             </h5>
           </div>
           <div>
-            <h6 className="ml-4 mt-4 text-[1rem] font-medium">0 USDT</h6>
+            <h6 className="ml-4 mt-4 text-[1rem] font-medium">
+              {maticBalance}
+            </h6>
           </div>
         </div>
         <div className="card w-full md:mx-2 md:w-[22%] h-[25vh] lg:mx-5 lg:mt-4">
@@ -118,9 +120,7 @@ const Account = () => {
             className="relative   break-words h-[55%] flex justify-center items-center p-5 rounded-lg "
             style={{ overflowWrap: "anywhere" }}
           >
-            <h6 className=" text-[1rem] font-medium  ">
-              695265358465125645698787545455574545456
-            </h6>
+            <h6 className=" text-[1rem] font-medium  ">{account}</h6>
           </div>
         </div>
         <div className="card  w-full md:w-[44%]  lg:w-[47%] h-[25vh] mx-5 lg:mt-4">
@@ -160,7 +160,8 @@ const Account = () => {
               <div className="flex flex-col mt-8 p-5 w-full  justify-around text-white font-medium">
                 <p className="">Wallet Balance</p>
                 <p className="">
-                  Matic Balance : 0 MATIC USDT Balance : 0 USDT
+                  Matic Balance : {maticBalance} || USDT Balance :{" "}
+                  {maticBalance} USDT
                 </p>
                 <div className="w-[100%] mt-4 ">
                   <input

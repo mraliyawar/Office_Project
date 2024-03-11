@@ -32,6 +32,7 @@ const Features = () => {
                   className="wow fadeInUp bg-color-2 icofont-stop animated"
                   style={{ visibility: "visible", animationName: "fadeInUp" }}
                 />
+
                 <div className="text " style={{ backgroundSize: "cover" }}>
                   <h4
                     className="wow fadeInUp animated"
