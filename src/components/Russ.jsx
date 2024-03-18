@@ -2,7 +2,6 @@ import React, { useContext, useState } from "react";
 import { FaRegCopy } from "react-icons/fa6";
 import img1 from "../images/logo.png";
 import img2 from "../images/lang.png";
-import { accountContext } from "../store/AccountStore";
 import { Link } from "react-router-dom";
 
 const Russ = () => {

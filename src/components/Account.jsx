@@ -8,7 +8,14 @@ import { FaTelegramPlane } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import SideBar from "./SideBar";
 
-const Account = ({ account, maticBalance }) => {
+const Account = ({
+  account,
+  maticBalance,
+  partnersCount,
+  directBusiness,
+  totalReward,
+  usdtBalance,
+}) => {
   const [show, setShow] = useState(false);
   const [open, setOpen] = useState(false);
 
@@ -84,7 +91,9 @@ const Account = ({ account, maticBalance }) => {
             </h5>
           </div>
           <div>
-            <h6 className="ml-4 mt-4 text-[1rem] font-medium">0 USDT</h6>
+            <h6 className="ml-4 mt-4 text-[1rem] font-medium">
+              {directBusiness}
+            </h6>
           </div>
         </div>
 
@@ -95,7 +104,9 @@ const Account = ({ account, maticBalance }) => {
             </h5>
           </div>
           <div>
-            <h6 className="ml-4 mt-4 text-[1rem] font-medium">0 </h6>
+            <h6 className="ml-4 mt-4 text-[1rem] font-medium">
+              {partnersCount}
+            </h6>
           </div>
         </div>
 
@@ -106,7 +117,7 @@ const Account = ({ account, maticBalance }) => {
             </h5>
           </div>
           <div>
-            <h6 className="ml-4 mt-4 text-[1rem] font-medium">0 USDT</h6>
+            <h6 className="ml-4 mt-4 text-[1rem] font-medium">{totalReward}</h6>
           </div>
         </div>
 
@@ -160,8 +171,8 @@ const Account = ({ account, maticBalance }) => {
               <div className="flex flex-col mt-8 p-5 w-full  justify-around text-white font-medium">
                 <p className="">Wallet Balance</p>
                 <p className="">
-                  Matic Balance : {maticBalance} || USDT Balance :{" "}
-                  {maticBalance} USDT
+                  Matic Balance : {maticBalance} || USDT Balance : {usdtBalance}{" "}
+                  USDT
                 </p>
                 <div className="w-[100%] mt-4 ">
                   <input

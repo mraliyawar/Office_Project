@@ -1,9 +1,7 @@
-import React, { useEffect, useState } from "react";
-import $ from "jquery";
+import React from "react";
+
 import abi from "../components/usdtContractAbi.json";
-import usdtabi from "../components/Abi.json";
-import web3 from "Web3";
-import Header from "./Header";
+
 import HeroSec from "./HeroSec";
 import About from "./About";
 import Vision from "./Vision";
@@ -13,39 +11,12 @@ import Roadmap from "./Roadmap";
 import Polygon from "./Polygon";
 import Footer from "./Footer";
 import Carousel from "./Courosel";
-import AccountContextProvider from "../store/AccountStore";
+import Header from "./Header";
 
-const Home = () => {
-  const getWeb3State = async () => {
-    let [contractInstance, selectedAccount, chainId] = [null, null, null, null];
-    try {
-      if (!window.ethereum) {
-        throw new Error("Metamask is not installed");
-      }
-      const accounts = await window.ethereum.request({
-        method: "eth_requestAccounts",
-      });
-      let chainIdHex = await window.ethereum.request({
-        method: "eth_chainId",
-      });
-      chainId = parseInt(chainIdHex, 16);
-      selectedAccount = accounts[0];
-      //read operation
-      const provider = new ethers.BrowserProvider(window.ethereum);
-      //write operation
-      const signer = await provider.getSigner();
-      const contractAddress = "0xCCC15B5CCAF92d34f3A99c2270920D3Fcf42c290";
-      contractInstance = new ethers.Contract(contractAddress, abi, signer);
-      return { contractInstance, chainId, selectedAccount };
-    } catch (error) {
-      console.error("Not able to get the web3states", error.message);
-      throw error;
-    }
-  };
-
+const Home = ({ connectMetaMask }) => {
   return (
-    <AccountContextProvider>
-      {/* <Header getWeb3State={getWeb3State} /> */}
+    <>
+      <Header connectMetaMask={connectMetaMask} />
       <HeroSec />
       <About />
       <Vision />
@@ -55,7 +26,7 @@ const Home = () => {
       <Roadmap />
       <Polygon />
       <Footer />
-    </AccountContextProvider>
+    </>
   );
 };
 
