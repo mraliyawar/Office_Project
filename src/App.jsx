@@ -37,41 +37,48 @@ const App = () => {
 
         // Fetch partners count from the blockchain
         const contractAddress = "0xf5da8a38b3709ff4881c3b411107a16434d64aae"; // Replace with your contract address
-        // const contractABI = [
-        //   // Add your contract ABI here
-        // ];
+
         const contract = new web3.eth.Contract(Abi, contractAddress);
-        const partnersCount = await contract.methods.getPartnersCount().call();
-        setPartnersCount(partnersCount);
+        const userinfo = await contract.methods.users(account).call();
+        let refer = web3.utils.toHex(userinfo.referrer);
+        console.log(refer);
+        console.log("athar");
 
-        // Fetch direct business from the blockchain
-        // const directBusiness = await contract.methods;
-        // let usersInfo = await contract.methods.users(account).call();
-        // directBusiness = web3.utils.toHex(usersInfo.totalCount);
-        //   .getDirectBusiness(account)
-        //   .call();
-        // setDirectBusiness(directBusiness);
+        const pCount = await contract.methods.users(account).call();
+        // let counting = userinfoo.partnersCount;
+        let pcountconvert = parseFloat(pCount.partnersCount) / 1000000;
+        setPartnersCount(pcountconvert);
+        console.log("hello");
+        console.log(pcountconvert);
 
-        // Fetch total reward from the blockchain
-        const totalReward = await contract.methods
-          .getTotalReward(account)
-          .call();
-        setTotalReward(totalReward);
+        //  setPartnersCount(userinfoo.partnersCount);
+        const dBusiness = await contract.methods.users(account).call();
+        // let directBusiness = dBusiness.directBusiness;
+        let directBusiness = parseFloat(dBusiness.directBusiness) / 1000000;
+        console.log(directBusiness);
+
+        setDirectBusiness(directBusiness);
+
+        const tReward = await contract.methods.users(account).call();
+        // let totalreward = tReward.totalreward;
+        let total_income = parseFloat(tReward.totalreward) / 1000000;
+        console.log(" hey i am totalreward");
+        console.log(total_income);
+
+        setTotalReward(total_income);
 
         // Fetch USDT balance from the USDT smart contract
         const usdtContractAddress =
           "0xBB7C99c5CbEA0a6Dd16A8eD9E0c28D5F599474cd"; // Replace with your USDT contract address
-        // const usdtContractABI = [
-        //   usdtContractABI,
-        //   // Add your USDT contract ABI here
-        // ];
         const usdtContract = new web3.eth.Contract(
           usdtContractABI,
           usdtContractAddress
         );
-        const usdtBalance = await usdtContract.methods
-          .balanceOf(account)
-          .call();
+        console.log(usdtContract);
+        let balanceFf = await usdtContract.methods.balanceOf(account).call();
+        // let _balance = web3.utils.fromWei(balanceFf, "ether");
+        let usdtBalance = parseFloat(balanceFf) / 1000000;
+        console.log(usdtBalance);
         setUsdtBalance(usdtBalance);
       } else {
         console.error("MetaMask not installed");
@@ -93,7 +100,7 @@ const App = () => {
                 account={account}
                 maticBalance={maticBalance}
                 partnersCount={partnersCount} /* My Team */
-                directBusinesss={directBusiness}
+                directBusiness={directBusiness}
                 totalReward={totalReward}
                 usdtBalance={usdtBalance}
               />
